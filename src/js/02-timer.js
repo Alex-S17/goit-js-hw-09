@@ -43,7 +43,6 @@ function startTimer() {
  
   timerId = setInterval(() => {
     const deltaTime = choosenDate - Date.now();
-    console.log('deltaTime=', deltaTime);
     if (deltaTime <= 0) {
       clearInterval(timerId);
       return;
